@@ -74,14 +74,10 @@
 
 
 
-
-
-
-
 // Record audio
     //
     function recordAudio() {
-        var src = "test.wav";
+        var src = "/test.wav";
         var mediaRec = new Media(src, onSuccess, onError);
 
         // Record audio
@@ -97,6 +93,9 @@
                 mediaRec.stopRecord();
             }
         }, 1000);
+
+
+
     }
 
     // Cordova is ready
@@ -123,11 +122,6 @@
     function setAudioPosition(position) {
         document.getElementById('audio_position').innerHTML = position;
     }
-
-
-
-
-
 
 
 
@@ -164,6 +158,9 @@
     <p id="audio_position"></p>
 
 
+
+<input type="button" name="recordBtn" id="recordBtn" value="Record">
+      <input type="button" name="stopBtn" id="stopBtn" value="Stop">
 
               </div>
 
