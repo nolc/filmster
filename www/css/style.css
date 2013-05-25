@@ -16,13 +16,20 @@
 
 
 
-
-/*#footer_logo_bocina a{
-	background: #654297;
-	border: 1px solid #654297;
-	height: 60px
+#img_txt{
+	height: 75px;
 }
-*/
+
+.centrado{
+	text-align: center;
+}
+
+
+#img_target{
+	height: 175px;
+	margin: 20px 20px 10px 20px;
+}
+
 
 
  #footer_logo_bocina .ui-btn-inner{
