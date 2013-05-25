@@ -1,0 +1,60 @@
+/* Put your custom CSS here .*/
+#page1 .head{
+	background: url("./img/fondo_header.png") repeat scroll 0 0 #111111 !important;
+	text-align: center;
+	height: 96px;
+}
+
+.head img{
+	margin-top: 0px !important;
+	left: 0 !important;
+    margin-left: auto !important;
+    margin-top: 0 !important;
+    position: inherit !important;
+    top: 0 !important;
+
+}
+
+.img1{
+	width: 640px; 
+	height: auto; 
+	position: inherit;
+	margin: auto;
+}
+.img1 img{
+	margin-top: 0px !important;
+	left: 0 !important;
+    margin-left: auto !important;
+    margin-top: 0 !important;
+    position: inherit !important;
+    top: 0 !important;
+}
+
+.img2{
+	width: 640px; 
+	height: auto; 
+	position: inherit;
+	margin: auto;
+}
+.img2 img{
+	margin-top: 0px !important;
+	left: 0 !important;
+    margin-left: auto !important;
+    margin-top: 0 !important;
+    position: inherit !important;
+    top: 0 !important;
+}
+
+.footer{
+
+}
+.footer a{
+	float: left;
+	position: relative; !important;
+}
+.footer .ui-btn-inner{
+	padding: 0 0 0 0!important;
+}
+.ui-body-bocina { 
+	background-image: url(./img/bocina.png); 
+}
