@@ -1,0 +1,78 @@
+
+.ui-bar-a {
+	border: 1px solid #db482f;
+	background: #db482f !important;
+}
+
+
+#logo_header{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -60px;
+	margin-top: -18px;
+	height: 35px;
+}
+
+
+
+
+/*#footer_logo_bocina a{
+	background: #654297;
+	border: 1px solid #654297;
+	height: 60px
+}
+*/
+
+
+ #footer_logo_bocina .ui-btn-inner{
+ 	background: #654297;
+ }
+
+#logo_bocina{
+	height: 45px;
+	float: left;
+	margin: 0 0 0 -10px;
+}
+
+
+ #footer_logo_target .ui-btn-inner{
+ 	background: #db482f;
+ }
+
+#logo_target{
+	height: 45px;
+	float: left;
+	margin: 0 0 0 -10px;
+}
+
+#footer_logo_estrella .ui-btn-inner{
+	background: #09a5cd;
+}
+
+#logo_estrella{
+	height: 45px;
+	float: left;
+	margin: 0 0 0 -10px;
+}
+
+
+#footer_logo_user .ui-btn-inner{
+	background: #53ac53;
+}
+
+#logo_user{
+	height: 45px;
+	float: left;
+	margin: 0 0 0 -10px;
+}
+
+
+.ui-btn-up-a{
+	border: none;
+}
+
+
+#footer_page{
+	border: none;
+}
