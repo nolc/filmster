@@ -15,7 +15,6 @@
 }
 
 
-
 #img_txt{
 	height: 75px;
 }
@@ -39,7 +38,7 @@
 #logo_bocina{
 	height: 45px;
 	float: left;
-	margin: 0 0 0 -10px;
+	margin: 0 0 0 -8px;
 }
 
 
@@ -50,7 +49,7 @@
 #logo_target{
 	height: 45px;
 	float: left;
-	margin: 0 0 0 -10px;
+	margin: 0 0 0 -8px;
 }
 
 #footer_logo_estrella .ui-btn-inner{
@@ -60,7 +59,7 @@
 #logo_estrella{
 	height: 45px;
 	float: left;
-	margin: 0 0 0 -10px;
+	margin: 0 0 0 -8px;
 }
 
 
@@ -71,7 +70,7 @@
 #logo_user{
 	height: 45px;
 	float: left;
-	margin: 0 0 0 -10px;
+	margin: 0 0 0 -8px;
 }
 
 
