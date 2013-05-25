@@ -15,82 +15,89 @@
 
     // Called when capture operation is finished
     //
-    // function captureSuccess(mediaFiles) {
-    //     var i, len;
-    //     for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-    //         uploadFile(mediaFiles[i]);
-    //     }
-    // }
+    function captureSuccess(mediaFiles) {
+        var i, len;
+        for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+            uploadFile(mediaFiles[i]);
+        }
+    }
 
     // Called if something bad happens.
     //
-    // function captureError(error) {
-    //     var msg = 'An error occurred during capture: ' + error.code;
-    //     navigator.notification.alert(msg, null, 'Uh oh!');
-    // }
+    function captureError(error) {
+        var msg = 'An error occurred during capture: ' + error.code;
+        navigator.notification.alert(msg, null, 'Uh oh!');
+    }
 
     // A button will call this function
     //
-    // function captureAudio() {
-    //     // Launch device audio recording application,
-    //     // allowing user to capture up to 2 audio clips
-    //     navigator.device.capture.captureAudio(captureSuccess, captureError, {limit: 2});
-    // }
+    function captureAudio() {
+        // Launch device audio recording application,
+        // allowing user to capture up to 2 audio clips
+        navigator.device.capture.captureAudio(captureSuccess, captureError, {limit: 2});
+    }
 
     // Upload files to server
-    // function uploadFile(mediaFile) {
-    //     var ft = new FileTransfer(),
-    //         path = mediaFile.fullPath,
-    //         name = mediaFile.name;
+    function uploadFile(mediaFile) {
+        var ft = new FileTransfer(),
+            path = mediaFile.fullPath,
+            name = mediaFile.name;
 
-    //     ft.upload(path,
-    //         "http://96.126.120.48/chrono/uploadaudio/save.php",
-    //         function(result) {
-    //             console.log('Upload success: ' + result.responseCode);
-    //             console.log(result.bytesSent + ' bytes sent');
-    //         },
-    //         function(error) {
-    //             console.log('Error uploading file ' + path + ': ' + error.code);
-    //         },
-    //         { fileName: name });
-    // }
+        ft.upload(path,
+            "http://96.126.120.48/chrono/uploadaudio/save.php",
+            function(result) {
+                console.log('Upload success: ' + result.responseCode);
+                console.log(result.bytesSent + ' bytes sent');
+            },
+            function(error) {
+                console.log('Error uploading file ' + path + ': ' + error.code);
+            },
+            { fileName: name });
+    }
 
 
 
         </script>
     </head>
     <body onload="onLoad();">
-        <!-- comienza pagina-->
+        <!-- comienza pagina de inicio-->
        <div data-role="page" id="page_dashboard">
            <div data-role="header" data-position="fixed">
             <h1></h1>
-           <img id="logo_header" src="images/header_img.png" alt="image" >
+           <img id="logo_header" src="images/header_img2.png" alt="image" >
            </div>
 
-            <div data-role="content">
-                <div class="centrado">
-                     <img id="img_txt" src="images/texto_body2.png" alt="image" >
+            <div data-role="content"class="contenedor">
+                
+                <div class='contenido'>
+                    <div class="centrado">
+                        <img id="img_txt" src="images/padrino.png" alt="image" >
+                        <div class="imagenes_dash"><img id="img_dash" src="images/imagen_dash.png" alt="imagen_dashboard"></div>
+                        <!-- <img id="corazon"src="images/corazon_m.png" alt="hearth"> -->
+                        <!-- <h3>MOVIE RAITING</h3>
+                        <span><p><img id="corazon"src="images/corazon_m.png" alt="hearth">9.2/10 from 690,500 users</p></span>
+                        <h3>STORY</h3>
+                        <span><p>The aging patriarch of Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus enim vitae tortor porttitor rhoncus. Nulla leo era</p></span>
+                        <h3>DIRECTOR</h3>
+                        <span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+                        <h3>WRITER</h3>
+                        <span><p>Lorem ipsum dolor sit amet, consectetur a</p></span> -->
+                    </div>
                 </div>
-                <div class="centrado">
-                    <a href="" onclick="captureAudio();">
-                    </a>
-                     <img id="img_target" src="images/target_img.png" alt="image" >
-                </div>
-                <button onclick="captureAudio();">Capture Audio</button>
-
             </div>
             <!-- comienza pagina-->
               <div id="footer_page" data-role="footer" data-position="fixed">
                 <div data-role="navbar" data-iconpos="bottom">
                     <ul>
-                        <li id="footer_logo_bocina"><a href="#"><img id="logo_bocina" src="images/bocina.png" alt="image" ></a></li>
-                        <li id="footer_logo_target"><a href="#"><img id="logo_target" src="images/target_2.png" alt="image" ></a></li>
-                        <li id="footer_logo_estrella"><a href="#"><img id="logo_estrella" src="images/estrella.png" alt="image" ></a></li>
-                        <li id="footer_logo_user"><a href="#"><img id="logo_user" src="images/usuario.png" alt="image" ></a></li>
+                        <li id="footer_logo_bocina"><a href="#page_dashboard"><img id="logo_bocina" src="images/bocina_active.png" alt="image" ></a></li>
+                        <li id="footer_logo_target"><a href="#page_dashboard2"><img id="logo_target" src="images/circulo.png" alt="image" ></a></li>
+                       <li id="footer_logo_estrella"><a href="#page_dashboard3"><img id="logo_estrella" src="images/estrella.png" alt="image" ></a></li>
+                        <li id="footer_logo_user"><a href="#page_dashboard4"><img id="logo_user" src="images/usuario.png" alt="image" ></a></li>
                     </ul>
                 </div><!-- /navbar -->
             </div><!-- /footer -->
         </div>
+        <!-- termina pagina de inicio -->
         <script type="text/javascript" src="cordova-2.7.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script src="js/jquery-1.8.3.min.js"></script>

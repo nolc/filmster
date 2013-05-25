@@ -40,9 +40,22 @@
 	width: 100%;
 	height: auto !important;
 }
+.contenido .imagenes_dash{
+	margin-top: -2px;
+}
+.contenido .imagenes_dash #img_dash{
+	margin-left: -15px;
+	width: 100%;
+	height: auto !important;
+}
 
 #img_txt{
 	height: 75px;
+}
+.contenedor{
+	padding-top: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
 .contenido{
 	padding-top: 0px !important;
@@ -60,6 +73,10 @@
 }
 .centrado{
 	text-align: center;
+}
+
+.centrado .imagenes_dash{
+
 }
 
 #img_target{
