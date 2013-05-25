@@ -5,6 +5,11 @@
 	background: #654297 !important;
 }
 
+#detail_movie
+{
+    display:none;
+}
+
 
 #page_dashboard2 .ui-bar-a {
 	border: 1px solid #db482f;
