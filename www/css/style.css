@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
 #page_dashboard .ui-bar-a {
 	border: 1px solid #654297;
@@ -29,16 +30,31 @@
 	margin-top: -18px;
 	height: 35px;
 }
-
+.contenido #img_txt{
+	margin-left: -15px;
+	width: 100%;
+}
 
 #img_txt{
 	height: 75px;
 }
+.contenido{
+	padding-top: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	font-family: 'Open Sans', sans-serif;
 
+}
+.contenido .centrado{
+	text-align: left;
+}
+.contenido h3, .contenido span p, .contenido img#corazon{
+	margin-left: 15px !important;
+	margin-right: 15px;
+}
 .centrado{
 	text-align: center;
 }
-
 
 #img_target{
 	height: 175px;
