@@ -33,6 +33,7 @@
 .contenido #img_txt{
 	margin-left: -15px;
 	width: 100%;
+	height: auto !important;
 }
 
 #img_txt{
