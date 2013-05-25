@@ -1,9 +1,25 @@
 
-.ui-bar-a {
+#page_dashboard .ui-bar-a {
+	border: 1px solid #654297;
+	background: #654297 !important;
+}
+
+
+#page_dashboard2 .ui-bar-a {
 	border: 1px solid #db482f;
 	background: #db482f !important;
 }
 
+#page_dashboard3 .ui-bar-a {
+	border: 1px solid #09a5cd;
+	background: #09a5cd !important;
+}
+
+
+#page_dashboard4 .ui-bar-a {
+	border: 1px solid #53ac53;
+	background: #53ac53 !important;
+}
 
 #logo_header{
 	position: absolute;
