@@ -47,18 +47,30 @@
             function(result) {
                 console.log('Upload success: ' + result.responseCode);
                 console.log(result.bytesSent + ' bytes sent');
+                result = JSON.parse(result.response);
+                  
+                  
+                $('#img_txt.imgmovie').attr('src',result.Poster);
+                $('#titlemovie').text(result.Title);
+                $('#storymovie').text(result.Plot);
+                $('#directormovie').text(result.Director);
+                $('#writermovie').text(result.Writer);
+                $('#ratemovie').text(result.imdbRating);
+                  
+                $('#recordingaudio').hide();
+                $('#detail_movie').show();
             },
             function(error) {
                 console.log('Error uploading file ' + path + ': ' + error.code);
             },
             { fileName: name });
         
-        $('#recordingaudio').hide();
-        $('#detail_movie').show();
+        
+        
     }
             
             
-            $(document).ready(function() {
+            $(document).bind('pageinit', function() {
          
                               $('#footer_logo_target a').click(function(){
                               
@@ -102,17 +114,17 @@
                 </div>
                 <div id='detail_movie'>
                     <div class="centrado">
-                        <img id="img_txt" src="images/padrino.png" alt="image" >
-                        <h3>FRIENDS WHO LIKED THIS MOVIE</h3>
+                        <img class='imgmovie' id="img_txt" src="images/padrino.png" alt="image" >
+                        <h3 id='titlemovie'>FRIENDS WHO LIKED THIS MOVIE</h3>
                         <!-- <img id="corazon"src="images/corazon_m.png" alt="hearth"> -->
                         <h3>MOVIE RAITING</h3>
-                        <span><p><img id="corazon"src="images/corazon_m.png" alt="hearth">9.2/10 from 690,500 users</p></span>
+                        <span><p><img id="corazon" src="images/corazon_m.png" alt="hearth"><span id='ratemovie'>9.2/10 from 690,500 users</span></p></span>
                         <h3>STORY</h3>
-                        <span><p>The aging patriarch of Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus enim vitae tortor porttitor rhoncus. Nulla leo era</p></span>
+                        <span><p id='storymovie'>The aging patriarch of Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus enim vitae tortor porttitor rhoncus. Nulla leo era</p></span>
                         <h3>DIRECTOR</h3>
-                        <span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+                        <span><p id='directormovie'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
                         <h3>WRITER</h3>
-                        <span><p>Lorem ipsum dolor sit amet, consectetur a</p></span>
+                        <span><p id='writermovie'>Lorem ipsum dolor sit amet, consectetur a</p></span>
                     </div>
                 </div>
             </div>
