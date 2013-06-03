@@ -63,15 +63,25 @@
 #logo_header{
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 30%;
 	margin-left: -60px;
 	margin-top: -18px;
 	height: 35px;
 }
+#flechaLeft{
+	position: absolute;
+	top: 50%;
+	right: 15%;
+	margin-left: -60px;
+	margin-top: -18px;
+	height: 30px;
+}
+
 .contenido #img_txt{
 	margin-left: 0px;
 	width: 100%;
 	height: auto !important;
+	margin-bottom: -5px;
 }
 .contenido .imagenes_dash{
 	margin-top: 0px;
@@ -80,6 +90,7 @@
 	margin-left: 0px;
 	width: 100%;
 	height: auto !important;
+	margin-bottom: -4px;
 }
 
 #img_txt{
@@ -170,4 +181,109 @@
 
 #footer_page{
 	border: none;
+}
+
+/*css your history*/
+
+
+.contenidoBody{
+	padding: 0;
+}
+.descripcion{
+	float: left;
+	width: 100%
+}
+
+.izq{
+	float: left;
+	width: 40%
+}
+.izq img{
+	width: 100%;
+	margin-bottom: -3px;
+}
+.der{
+	float: left;
+	width: 60%
+}
+.der h3{
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.der #ratemovie{
+	margin-bottom: 0px;
+}
+.der .descMovie{
+	font-size: 10px;
+}
+.der .like{
+	font-size: 10px;
+}
+.der p{
+	margin-top: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+}
+.der #corazon{
+	height: 12px;
+}
+.der .flechaRight{
+	height: 15px;
+	margin-left: 5px;
+}
+
+/*css profile*/
+.contenidoProfile{
+	padding: 0;
+}
+
+.texto-profile{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.texto-profile .texto1{
+	width: 90%;
+
+}
+.descripcion2{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.amigo{
+	float: left;
+	width: 15%;
+	margin-left: 5px;
+}
+.amigo img{
+	width: 100%;
+
+}
+.descripcion #accion{
+	height: 12px;
+}
+.descripcion .find{
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 0px;
+}
+.descripcion .notificacion{
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 0px;
+}
+.descripcion #textoNotifica{
+	font-size: 10px;
+}
+
+.descripcion .lastRev{
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 0px;
+	font-size: 10px;
 }
