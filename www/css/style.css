@@ -4,7 +4,10 @@
 	border: 1px solid #654297;
 	background: #654297 !important;
 }
-
+.page_dashboard_2 .ui-bar-a {
+	border: none !important;
+	background: none !important;
+}
 .contenedorDash2{
 	padding-top: 0px !important;
 	padding-left: 0px !important;
@@ -133,43 +136,47 @@
 
  #footer_logo_bocina .ui-btn-inner{
  	background: #654297;
+ 	text-align: center;
  }
 
 #logo_bocina{
 	height: 45px;
-	float: left;
+	/*float: left;*/
 	margin: 0 0 0 -8px;
 }
 
 
  #footer_logo_target .ui-btn-inner{
  	background: #db482f;
+ 	text-align: center;
  }
 
 #logo_target{
 	height: 45px;
-	float: left;
+	/*float: left;*/
 	margin: 0 0 0 -8px;
 }
 
 #footer_logo_estrella .ui-btn-inner{
 	background: #09a5cd;
+	text-align: center;
 }
 
 #logo_estrella{
 	height: 45px;
-	float: left;
+	/*float: left;*/
 	margin: 0 0 0 -8px;
 }
 
 
 #footer_logo_user .ui-btn-inner{
 	background: #53ac53;
+	text-align: center;
 }
 
 #logo_user{
 	height: 45px;
-	float: left;
+	/*float: left;*/
 	margin: 0 0 0 -8px;
 }
 
@@ -297,4 +304,36 @@
 }
 .descripcion ul li{
 	display: block;
+}
+
+
+/*CSS pagina logueo*/
+.colores .mor{
+	background-color:#654297;
+	width: 35%;
+	height: 35px;
+}
+.colores .roj{
+	background-color: #DB482F;
+	width: 30%;
+	height: 35px;
+}
+.colores .az_ul{
+	background-color: #09A5CD;
+	width: 20%;
+	height: 35px;
+}
+.colores .ver{
+	background-color: #53AC53;
+	width: 15%;
+	height: 35px;
+}
+
+.morado{
+	margin-top: 15px;
+	width: 100%;
+}
+.redes{
+	margin-top: 15px;
+	width: 80%;
 }
