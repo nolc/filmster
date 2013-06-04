@@ -235,8 +235,9 @@
         </div>
 
 
-        <!-- comienza pagina de usuario -->
-       <div data-role="page" id="page_dashboard4">
+        
+        <!-- comienza pagina de perfil -->
+       <div data-role="page" id="page_dashboard4_original">
            <div data-role="header" data-position="fixed">
             <h1></h1>
            <img id="logo_header" src="images/your-profile.png" alt="image" >
@@ -286,6 +287,52 @@
             </div><!-- /footer -->
         </div>
 
+
+        <!-- comienza pagina de settings -->
+      
+       <div data-role="page" id="page_dashboard4">
+           <div data-role="header" data-position="fixed">
+            <h1></h1>
+           <img id="logo_header" src="images/imagen-settings.png" alt="image" >
+           <img id="flechaLeft" src="images/engrane-blanco.png">
+           </div>
+
+            <div data-role="content" class="contenidoProfile">
+               <div class="descripcion">
+                
+                    <ul>
+                        <li>General Settings</li>
+                        <li>Sign out of facebook</li>
+                        <li>Sign into Twitter</li>
+                        <li>Sign into Evernote</li>
+                        <li>terms of use</li>
+                        <li>Check for upgrade</li>
+                      
+                    </ul>
+               
+               </div>
+               <div class="texto-profile">
+                    <img class="texto1" src="images/texto-setting.png" alt="image" >
+                </div>
+                <div class="texto-profile">
+                    <img class="texto1" src="images/dos-engranes.png" alt="image" >
+                </div>
+                
+
+
+            </div>
+            <!-- comienza pagina-->
+              <div id="footer_page" data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li id="footer_logo_bocina"><a href="#page_dashboard"><img id="logo_bocina" src="images/bocina.png" alt="image" ></a></li>
+                        <li id="footer_logo_target"><a href="#page_dashboard2"><img id="logo_target" src="images/circulo.png" alt="image" ></a></li>
+                       <li id="footer_logo_estrella"><a href="#page_dashboard3"><img id="logo_estrella" src="images/estrella.png" alt="image" ></a></li>
+                        <li id="footer_logo_user"><a href="#page_dashboard4"><img id="logo_user" src="images/usuario.png" alt="image" ></a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+        </div>
         <script type="text/javascript" src="cordova-2.7.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script src="js/jquery-1.8.3.min.js"></script>

@@ -287,3 +287,14 @@
 	margin-bottom: 0px;
 	font-size: 10px;
 }
+
+/*CSS settings*/
+
+.descripcion ul{
+	font-family: 'Open Sans', sans-serif;
+	list-style-type: none;
+	font-size: 12px;
+}
+.descripcion ul li{
+	display: block;
+}
